@@ -474,7 +474,7 @@ export class AuthClass {
 	 */
 	public signIn(
 		usernameOrSignInOpts: string | SignInOpts,
-		pw?: string,
+		password?: string,
 		clientMetadata: ClientMetaData = this._config.clientMetadata
 	): Promise<CognitoUser | any> {
 		if (!this.userPool) {
